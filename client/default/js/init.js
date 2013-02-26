@@ -40,10 +40,10 @@ $fh.ready(function() {
         act:'errorFunction'
       },
       function(res) {
-        alert('success');
+        alert('success red button');
       },
       function(err,msg) {
-        alert('fail');
+        alert('fail red button');
       }
     );
   };
@@ -53,10 +53,10 @@ $fh.ready(function() {
         act:'successFunction'
       },
       function(res) {
-        alert('success');
+        alert('success green buton');
       },
       function(err,msg) {
-        alert('fail1');
+        alert('fail green buton');
       }
     );
   };
