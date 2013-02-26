@@ -33,4 +33,24 @@ $fh.ready(function() {
       }
     );
   };
+  document.getElementById('error_button').onclick = function() {
+    
+    
+    $fh.act(
+      {
+        act:'errorFunction',
+        req: {
+          num: rand
+        }
+      },
+      function(res) {
+        document.getElementById('cloudConfig').innerHTML = "<p>" + JSON.stringify(res) + "</p>";
+        //alert(res);
+      },
+      function(err,msg) {
+        document.getElementById('cloudConfig').innerHTML = "<p>ERROR: " + JSON.stringify(msg.error) + "</p>";
+        //alert('An error occured: ' + code + ' : ' + errorprops);
+      }
+    );
+  };
 });
