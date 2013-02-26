@@ -35,7 +35,19 @@ $fh.ready(function() {
   };
   
   document.getElementById('error_button').onclick = function() {
-    //alert('clicked');
+    $fh.act(
+      {
+        act:'errorFunction'
+      },
+      function(res) {
+        alert('success');
+      },
+      function(err,msg) {
+        alert('fail');
+      }
+    );
+  };
+  document.getElementById('success_button').onclick = function() {
     $fh.act(
       {
         act:'errorFunction'
