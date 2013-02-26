@@ -56,7 +56,7 @@ $fh.ready(function() {
         alert('success');
       },
       function(err,msg) {
-        alert('fail');
+        alert('fail1');
       }
     );
   };
