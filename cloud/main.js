@@ -7,7 +7,7 @@ exports.myFunction = function(params, callback) {
 };
 
 exports.errorFunction = function(params, callback) {
-  var num = "13"; //params.num;
+  var num = 13; //params.num;
   if(num > 10){
     return callback({err: 'Num too large'}, {result: num});
   }
