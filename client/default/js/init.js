@@ -36,13 +36,9 @@ $fh.ready(function() {
   
   document.getElementById('error_button').onclick = function() {
     //alert('clicked');
-    var rand = 6;
     $fh.act(
       {
-        act:'errorFunction',
-        req: {
-          num: rand
-        }
+        act:'errorFunction'
       },
       function(res) {
         alert('success');
