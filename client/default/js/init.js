@@ -38,6 +38,7 @@ $fh.ready(function() {
     //alert('clicked');
     $fh.act(
       {
+        alert('clicked');
         act:'errorFunction',
         req: {
           num: rand
