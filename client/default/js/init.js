@@ -41,11 +41,11 @@ $fh.ready(function() {
       },
       function(res) {
         //alert('success red button');
-        document.getElementById('cloudConfig').innerHTML = "<p>red buton clicked - <span style='color:#ff0000;'>FAIL</span> returned</p>";
+        document.getElementById('cloudConfig').innerHTML = "<p>red buton clicked - <span style='color:#00ff00;'>SUCCESS</span> returned</p>";
       },
       function(err,msg) {
         //alert('fail red button');
-        document.getElementById('cloudConfig').innerHTML = "<p>red buton clicked - <span style='color:#00ff00;'>SUCCESS</span> returned</p>";
+        document.getElementById('cloudConfig').innerHTML = "<p>red buton clicked - <span style='color:#ff0000;'>FAIL</span> returned</p>";
       }
     );
   };
