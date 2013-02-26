@@ -40,10 +40,12 @@ $fh.ready(function() {
         act:'errorFunction'
       },
       function(res) {
-        alert('success red button');
+        //alert('success red button');
+        document.getElementById('cloudConfig').innerHTML = "<p>red buton clicked - <span style='color:#ff0000;'>FAIL</span> returned</p>";
       },
       function(err,msg) {
-        alert('fail red button');
+        //alert('fail red button');
+        document.getElementById('cloudConfig').innerHTML = "<p>red buton clicked - <span style='color:#00ff00;'>SUCCESS</span> returned</p>";
       }
     );
   };
@@ -53,10 +55,12 @@ $fh.ready(function() {
         act:'successFunction'
       },
       function(res) {
-        alert('success green buton');
+        //alert('success green buton');
+        document.getElementById('cloudConfig').innerHTML = "<p>green buton clicked - <span style='color:#00ff00;'>SUCCESS</span> returned</p>";
       },
       function(err,msg) {
-        alert('fail green buton');
+        //alert('fail green buton');
+        document.getElementById('cloudConfig').innerHTML = "<p>green buton clicked - <span style='color:#ff0000;'>FAIL</span> returned</p>";
       }
     );
   };
