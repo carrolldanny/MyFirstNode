@@ -7,12 +7,8 @@ exports.myFunction = function(params, callback) {
 };
 
 exports.errorFunction = function(params, callback) {
-  
     return callback({err: 'Num too large'}, {result: num});
-  
 };
 exports.successFunction = function(params, callback) {
-  
     callback(undefined, {result: num});
-  
 };
