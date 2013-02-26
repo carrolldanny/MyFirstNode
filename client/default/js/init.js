@@ -36,7 +36,7 @@ $fh.ready(function() {
   
   document.getElementById('error_button').onclick = function() {
     //alert('clicked');
-    var rand = Math.floor((Math.random()*10)+1);
+    var rand = 6;
     $fh.act(
       {
         act:'errorFunction',
