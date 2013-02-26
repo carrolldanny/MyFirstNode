@@ -39,7 +39,7 @@ $fh.ready(function() {
     var rand = 6;
     $fh.act(
       {
-        act:'myFunction',
+        act:'errorFunction',
         req: {
           num: rand
         }
