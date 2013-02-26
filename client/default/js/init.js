@@ -39,6 +39,9 @@ $fh.ready(function() {
       {
         act:'errorFunction'
       },
+      function(res) {
+        alert('success');
+      },
       function(err,msg) {
         alert('fail');
       }
@@ -51,6 +54,9 @@ $fh.ready(function() {
       },
       function(res) {
         alert('success');
+      },
+      function(err,msg) {
+        alert('fail');
       }
     );
   };
