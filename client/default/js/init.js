@@ -50,7 +50,7 @@ $fh.ready(function() {
   document.getElementById('success_button').onclick = function() {
     $fh.act(
       {
-        act:'errorFunction'
+        act:'successFunction'
       },
       function(res) {
         alert('success');
