@@ -35,6 +35,7 @@ $fh.ready(function() {
   };
   
   document.getElementById('error_button').onclick = function() {
+    alert('clicked');
     $fh.act(
       {
         act:'errorFunction',
