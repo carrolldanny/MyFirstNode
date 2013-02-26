@@ -11,6 +11,6 @@ exports.errorFunction = function(params, callback) {
 };
 exports.successFunction = function(params, callback) {
   //callback(undefined, {result: num});
-  return callback({err: 'Num too large'}, {result: num});
+  //return callback({err: 'Num too large'}, {result: num});
   callback(undefined, {result: num});
 };
