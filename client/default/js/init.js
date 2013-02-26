@@ -52,7 +52,8 @@ $fh.ready(function() {
       function(err,msg) {
         //document.getElementById('cloudConfig').innerHTML = "<p>ERROR: " + JSON.stringify(msg.error) + "</p>";
         //document.getElementById('cloudConfig').innerHTML = "<p>no error</p>";
-        alert('An error occured: ' + code + ' : ' + errorprops);
+        //alert('An error occured: ' + code + ' : ' + errorprops);
+        alert('hello');
       }
     );
   };
