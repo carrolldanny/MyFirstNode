@@ -45,13 +45,13 @@ $fh.ready(function() {
       },
       function(res) {
         //document.getElementById('cloudConfig').innerHTML = "<p>" + JSON.stringify(res) + "</p>";
-        document.getElementById('cloudConfig').innerHTML = "<p>error</p>";
-        //alert(res);
+        //document.getElementById('cloudConfig').innerHTML = "<p>error</p>";
+        alert(res);
       },
       function(err,msg) {
         //document.getElementById('cloudConfig').innerHTML = "<p>ERROR: " + JSON.stringify(msg.error) + "</p>";
-        document.getElementById('cloudConfig').innerHTML = "<p>no error</p>";
-        //alert('An error occured: ' + code + ' : ' + errorprops);
+        //document.getElementById('cloudConfig').innerHTML = "<p>no error</p>";
+        alert('An error occured: ' + code + ' : ' + errorprops);
       }
     );
   };
