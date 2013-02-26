@@ -36,7 +36,7 @@ $fh.ready(function() {
   
   document.getElementById('error_button').onclick = function() {
     //alert('clicked');
-    var rand = 6;
+    //var rand = 6;
     $fh.act(
       {
         act:'errorFunction',
@@ -47,7 +47,7 @@ $fh.ready(function() {
       function(res) {
         //document.getElementById('cloudConfig').innerHTML = "<p>" + JSON.stringify(res) + "</p>";
         //document.getElementById('cloudConfig').innerHTML = "<p>error</p>";
-        alert(res);
+        alert('test');
       },
       function(err,msg) {
         //document.getElementById('cloudConfig').innerHTML = "<p>ERROR: " + JSON.stringify(msg.error) + "</p>";
